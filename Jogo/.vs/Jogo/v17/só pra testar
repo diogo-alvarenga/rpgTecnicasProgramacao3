@@ -1,1 +1,227 @@
+using System;
+using System.Threading;
+
+namespace Jogo
+{
+    // =========================================================================
+    // 1. INTERFACE DOS PERSONAGENS
+    // =========================================================================
+    public interface IPersonagem
+    {
+        string Nome { get; set; }
+        int Vida { get; set; }
+        int Forca { get; set; }
+        void Atacar(Inimigo inimigo);
+        void ExibirStatus();
+    }
+
+    // =========================================================================
+    // 2. CLASSES DOS HERÓIS (IMPLEMENTANDO A INTERFACE)
+    // =========================================================================
+    public class Guerreiro : IPersonagem
+    {
+        public string Nome { get; set; }
+        public int Vida { get; set; }
+        public int Forca { get; set; }
+
+        public Guerreiro(string nome)
+        {
+            Nome = nome;
+            Vida = 120; // Guerreiro tem mais vida
+            Forca = 20;
+        }
+
+        public void Atacar(Inimigo inimigo)
+        {
+            Console.WriteLine($"⚔️ {Nome} desferiu um golpe de espada no {inimigo.Nome} causando {Forca} de dano!");
+            inimigo.Vida -= Forca;
+        }
+
+        public void ExibirStatus()
+        {
+            Console.WriteLine($"🛡️ [Guerreiro] {Nome} | Vida: {Math.Max(0, Vida)} | Força: {Forca}");
+        }
+    }
+
+    public class Mago : IPersonagem
+    {
+        public string Nome { get; set; }
+        public int Vida { get; set; }
+        public int Forca { get; set; }
+
+        public Mago(string nome)
+        {
+            Nome = nome;
+            Vida = 80; // Mago tem menos vida
+            Forca = 35; // Mas causa muito mais dano
+        }
+
+        public void Atacar(Inimigo inimigo)
+        {
+            Console.WriteLine($"🔥 {Nome} lançou uma Bola de Fogo no {inimigo.Nome} causando {Forca} de dano mágico!");
+            inimigo.Vida -= Forca;
+        }
+
+        public void ExibirStatus()
+        {
+            Console.WriteLine($"🔮 [Mago] {Nome} | Vida: {Math.Max(0, Vida)} | Magia: {Forca}");
+        }
+    }
+
+    public class Arqueiro : IPersonagem
+    {
+        public string Nome { get; set; }
+        public int Vida { get; set; }
+        public int Forca { get; set; }
+
+        public Arqueiro(string nome)
+        {
+            Nome = nome;
+            Vida = 100;
+            Forca = 25;
+        }
+
+        public void Atacar(Inimigo inimigo)
+        {
+            Console.WriteLine($"🏹 {Nome} disparou uma flecha certeira no {inimigo.Nome} causando {Forca} de dano!");
+            inimigo.Vida -= Forca;
+        }
+
+        public void ExibirStatus()
+        {
+            Console.WriteLine($"🎯 [Arqueiro] {Nome} | Vida: {Math.Max(0, Vida)} | Agilidade: {Forca}");
+        }
+    }
+
+    // =========================================================================
+    // 3. CLASSE DO INIMIGO
+    // =========================================================================
+    public class Inimigo
+    {
+        public string Nome { get; set; }
+        public int Vida { get; set; }
+        public int Dano { get; set; }
+
+        public Inimigo(string nome, int vida, int dano)
+        {
+            Nome = nome;
+            Vida = vida;
+            Dano = dano;
+        }
+
+        public void Atacar(IPersonagem heroi)
+        {
+            Console.WriteLine($"👹 {Nome} contra-atacou {heroi.Nome} causando {Dano} de dano!");
+            heroi.Vida -= Dano;
+        }
+
+        public void ExibirStatus()
+        {
+            Console.WriteLine($"👾 [Inimigo] {Nome} | Vida: {Math.Max(0, Vida)}");
+        }
+    }
+
+    // =========================================================================
+    // 4. PADRÃO DESIGN: FACTORY (FÁBRICA DE PERSONAGENS)
+    // =========================================================================
+    public static class PersonagemFactory
+    {
+        // Centraliza a criação de objetos baseada na escolha do menu
+        public static IPersonagem CriarPersonagem(int escolha, string nome)
+        {
+            switch (escolha)
+            {
+                case 1: return new Guerreiro(nome);
+                case 2: return new Mago(nome);
+                case 3: return new Arqueiro(nome);
+                default: throw new ArgumentException("Opção inválida!");
+            }
+        }
+    }
+
+    // =========================================================================
+    // 5. SISTEMA DE BATALHA
+    // =========================================================================
+    public class Batalha
+    {
+        public static void IniciarCombate(IPersonagem heroi, Inimigo inimigo)
+        {
+            Console.WriteLine($"\n--- A BATALHA COMEÇOU: {heroi.Nome} VS {inimigo.Nome} --- \n");
+
+            int turno = 1;
+            while (heroi.Vida > 0 && inimigo.Vida > 0)
+            {
+                Console.WriteLine($"\n--- Turno {turno} ---");
+                heroi.ExibirStatus();
+                inimigo.ExibirStatus();
+                Console.WriteLine("----------------");
+
+                // Vez do Herói atacar
+                heroi.Atacar(inimigo);
+
+                // Confere se o monstro morreu
+                if (inimigo.Vida <= 0)
+                {
+                    Console.WriteLine($"\n🎉 Vitória! O {inimigo.Nome} foi derrotado por {heroi.Nome}!");
+                    break;
+                }
+
+                // Vez do Inimigo contra-atacar
+                inimigo.Atacar(heroi);
+
+                // Confere se o herói morreu
+                if (heroi.Vida <= 0)
+                {
+                    Console.WriteLine($"\n💀 Game Over! {heroi.Nome} tombou em batalha...");
+                    break;
+                }
+
+                turno++;
+                Thread.Sleep(1500); // Aguarda 1.5 segundos para a próxima rodada
+            }
+        }
+    }
+
+    // =========================================================================
+    // 6. EXECUÇÃO DO PROGRAMA PRINCIPAL
+    // =========================================================================
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.Write("Digite o nome do seu herói: ");
+                string nomeInput = Console.ReadLine();
+
+                Console.WriteLine("\nEscolha sua classe:");
+                Console.WriteLine("1 - Guerreiro 🛡️");
+                Console.WriteLine("2 - Mago 🔮");
+                Console.WriteLine("3 - Arqueiro 🎯");
+                Console.Write("Opção: ");
+                int opcao = int.Parse(Console.ReadLine());
+
+                // O código não sabe o tipo exato até o jogador digitar, a Factory cria dinamicamente:
+                IPersonagem jogador = PersonagemFactory.CriarPersonagem(opcao, nomeInput);
+
+                Console.Clear();
+                Console.WriteLine("--- PERSONAGEM SELECIONADO ---");
+                jogador.ExibirStatus();
+
+                // Instanciando o oponente da fase
+                Inimigo boss = new Inimigo("Orc Rei", 90, 16);
+
+                // Inicia o combate
+                Batalha.IniciarCombate(jogador, boss);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro encontrado: {ex.Message}");
+            }
+
+            Console.WriteLine("\nPressione qualquer tecla para encerrar...");
+            Console.ReadKey();
+        }
+    }
+}
 
