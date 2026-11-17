@@ -1,14 +1,31 @@
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfoInputs.cache
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfo.cs
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.csproj.CoreCompileInputs.cache
-C:\Users\Alunos\source\repos\Jogo\Jogo\bin\Debug\net8.0\Jogo.exe
-C:\Users\Alunos\source\repos\Jogo\Jogo\bin\Debug\net8.0\Jogo.deps.json
-C:\Users\Alunos\source\repos\Jogo\Jogo\bin\Debug\net8.0\Jogo.runtimeconfig.json
-C:\Users\Alunos\source\repos\Jogo\Jogo\bin\Debug\net8.0\Jogo.dll
-C:\Users\Alunos\source\repos\Jogo\Jogo\bin\Debug\net8.0\Jogo.pdb
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.dll
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\refint\Jogo.dll
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.pdb
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\Jogo.genruntimeconfig.cache
-C:\Users\Alunos\source\repos\Jogo\Jogo\obj\Debug\net8.0\ref\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\bin\Debug\net8.0\Jogo.exe
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\bin\Debug\net8.0\Jogo.deps.json
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\bin\Debug\net8.0\Jogo.runtimeconfig.json
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\bin\Debug\net8.0\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\bin\Debug\net8.0\Jogo.pdb
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfoInputs.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfo.cs
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\refint\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.pdb
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.genruntimeconfig.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\ref\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Trabalho2\Jogo_MVC_Comentarios_Tecnicos\Jogo_MVC_Simplificado\Jogo\obj\Debug\net8.0\Jogo.csproj.Up2Date
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\bin\Debug\net8.0\Jogo.exe
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\bin\Debug\net8.0\Jogo.deps.json
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\bin\Debug\net8.0\Jogo.runtimeconfig.json
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\bin\Debug\net8.0\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\bin\Debug\net8.0\Jogo.pdb
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfoInputs.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.AssemblyInfo.cs
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.sourcelink.json
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\refint\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.pdb
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.genruntimeconfig.cache
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\ref\Jogo.dll
+C:\Users\Ivo\OneDrive\Área de Trabalho\FATEC\3 semestre\Tecnica de Programação 2\Jogo Design\Jogo\Jogo\obj\Debug\net8.0\Jogo.csproj.Up2Date
